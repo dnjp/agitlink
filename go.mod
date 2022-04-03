@@ -1,4 +1,4 @@
-module github.com/rogpeppe/agitlink
+module github.com/dnjp/agitlink
 
 go 1.16
 

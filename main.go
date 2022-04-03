@@ -66,7 +66,7 @@ func repo(dir string) (string, error) {
 	if len(s1) == len(s) {
 		return "", fmt.Errorf("unexpected prefix for remote %q (want %q)", s, remotePrefix)
 	}
-	return strings.TrimSpace(s1), nil
+	return strings.TrimSuffix(strings.TrimSpace(s1), ".git"), nil
 }
 
 func relativeFilename(f string) (string, error) {
